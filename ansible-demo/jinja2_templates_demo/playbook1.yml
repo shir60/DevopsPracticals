@@ -1,0 +1,13 @@
+---
+- hosts: localhost
+
+  vars:
+    first_name: kunal
+    last_name: shirsath
+    
+  tasks:
+    - name: Printing variables
+        
+  tasks:
+    - name: Printing variables
+      debug: msg='The name is {{ last_name | title }}! {{ first_name | title }} {{ last_name | title }}!'

@@ -1,0 +1,12 @@
+---
+- hosts: localhost
+
+  vars:
+    array_of_numbers:
+      - 11
+      - 12
+      - 13
+      - 14
+  tasks:
+    - name: Print the maximum of array
+      debug: msg='maximum={{ array_of_numbers | max }}'
